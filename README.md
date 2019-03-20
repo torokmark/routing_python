@@ -34,7 +34,7 @@ routing.register(route='/users/{id}',
 The return value is the result of the executed lambda belongs to the route.
 * **path**: the route
 * **query string params**: dict of query params with their values
-* **method**: the method on the route
+* **method**: the method of the call
 
 ```python
 resp_body = routing.process(event.get('path'), 
