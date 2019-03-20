@@ -37,7 +37,9 @@ The return value is the result of the executed lambda belongs to the route.
 * **method**: the method on the route
 
 ```python
-resp_body = routing.process(event.get('path'), event.get('queryStringParameters'), event.get('httpMethod'))
+resp_body = routing.process(event.get('path'), 
+                            event.get('queryStringParameters'), 
+                            event.get('httpMethod'))
 ```
 
 `process` raises different kind of errors depending on the error in the path,
